@@ -25,6 +25,10 @@
   --transition:  0.35s cubic-bezier(0.22, 1, 0.36, 1);
   --shadow-card: 0 4px 32px rgba(0,0,0,0.45), 0 0 0 1px var(--border);
   --shadow-glow: 0 0 40px rgba(140, 200, 75, 0.25);
+  /* Tipografía — consistente con el logo */
+  --font-heading: 'Montserrat', sans-serif;
+  --font-body:    'Inter', sans-serif;
+  --font-serif:   'Cormorant Garamond', serif; /* solo para citas/slogan */
 }
 
 /* ── RESET & BASE ───────────────────────────────────── */
@@ -252,10 +256,12 @@ a { text-decoration: none; color: inherit; }
 }
 
 .hero-title {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(3rem, 5.5vw, 5.2rem);
-  line-height: 1.06;
+  font-family: var(--font-heading);
+  font-size: clamp(2.4rem, 4.8vw, 4.6rem);
+  line-height: 1.05;
   font-weight: 700;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
@@ -521,17 +527,19 @@ a { text-decoration: none; color: inherit; }
 }
 
 .section-title {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
   font-weight: 700;
   color: var(--white);
-  line-height: 1.15;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
   margin-bottom: 16px;
 }
 
 .section-title em {
   color: var(--green);
-  font-style: italic;
+  font-style: normal;
 }
 
 .section-subtitle {
@@ -739,10 +747,12 @@ a { text-decoration: none; color: inherit; }
 }
 
 .bento-title {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.35rem;
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
   font-weight: 700;
   color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
   margin-bottom: 8px;
   line-height: 1.25;
 }
@@ -809,15 +819,17 @@ a { text-decoration: none; color: inherit; }
 }
 
 .dif-title {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
   font-weight: 700;
   color: var(--white);
-  line-height: 1.2;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
   margin-bottom: 52px;
 }
 
-.accent-text { color: var(--green); font-style: italic; }
+.accent-text { color: var(--green); font-style: normal; }
 
 .dif-cards {
   display: grid;
@@ -1007,14 +1019,16 @@ a { text-decoration: none; color: inherit; }
 }
 
 .brand-name {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.4rem;
-  font-weight: 400;
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
   color: var(--white);
-  line-height: 1.3;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1.35;
 }
 
-.brand-name strong { font-weight: 700; color: var(--white); }
+.brand-name strong { font-weight: 700; color: var(--green); }
 
 .brand-tag-line {
   font-size: 12px;
@@ -1097,9 +1111,11 @@ a { text-decoration: none; color: inherit; }
 }
 
 .footer-logo {
-  font-family: 'Cormorant Garamond', serif;
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-family: var(--font-heading);
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
   color: var(--white);
 }
 
